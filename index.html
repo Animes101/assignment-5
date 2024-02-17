@@ -29,7 +29,7 @@
 <body>
     <!--=======header area start=========-->
     <header>
-        <div class="navbar bg-base-100 container">
+        <div class="navbar bg-base-100">
             <div class="navbar-start">
               <div class="dropdown">
                 <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -61,16 +61,46 @@
     <main>
         <!--========banner section========-->
         <section>
-            <div class="w-[90%] mx-auto">
-                <div class="hero min-h-screen" style="background-image: url(images/banner.png);">
+            <div class="w-[90%] mx-auto relative">
+                <div class="hero min-h-[500px]" style="background-image: url(images/banner.png);">
                     <div class="hero-overlay bg-opacity-60"></div>
                     <div class="hero-content text-center text-neutral-content">
-                      <div class="max-w-md">
-                        <h1 class="mb-5 text-5xl font-bold">End-to-End Travel with</h1>
-                        <h3>P Paribahan</h3>
-                        <p class="mb-5">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
-                        <button class="btn btn-primary">Buy Tickets</button>
+                      <div class="">
+                        <h1 class="mb-5 text-6xl text-white raleway-font font-extrabold">End-to-End Travel with</h1>
+                        <h3 class="text-green-500 font-bold text-3xl raleway-font">A Paribahan</h3>
+                        <p class="mb-5 text-base font-light w-[70%] mx-auto">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
+                        <button class="btn bg-green-500 text-black"><a href="">Buy Tickets</a></button>
                       </div>
+                    </div>
+                  </div>
+
+                  <div class="w-full md:w-[90%] h-[100px] grid gap-5  grid-cols-1 md:grid-cols-3 absolute left-0 right-0 -bottom-[100px] md:-bottom-[40px] m-auto">
+                    <!--card -1-->
+                    <div class="flex  items-center bg-white rounded-lg gap-3 border-2 border-gray-600">
+                        <img src="images/people.png" alt="people">
+                        <div>
+                            <h1 class="text-3xl text-black font-bold">500K+</h1>
+                            <p class="text-xl text-gray-500">Registered users</p>
+                        </div>
+                        
+                    </div>
+                    <!--card -2-->
+                    <div class="flex  items-center bg-white rounded-lg gap-3 border-2 border-gray-600">
+                        <img src="images/ticket-cupon.png" alt="ticket-cupon">
+                        <div>
+                            <h1 class="text-3xl text-black font-bold">1.7 lacks</h1>
+                            <p class="text-xl text-gray-500">Tickets sold</p>
+                        </div>
+                        
+                    </div>
+                    <!--card -3-->
+                    <div class="flex  items-center bg-white rounded-lg gap-3 border-2 border-gray-600">
+                        <img src="images/stoppage.png" alt="people">
+                        <div>
+                            <h1 class="text-3xl text-black font-bold">80K+</h1>
+                            <p class="text-xl text-gray-500">Rental partners</p>
+                        </div>
+                        
                     </div>
                   </div>
 
