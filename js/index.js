@@ -4,16 +4,29 @@ let seat=40;
 let count=0;
 let discount=0;
 const seatsButtons=document.querySelectorAll('#sit-button');
-for(let i = 0 ; i <= seatsButtons.length ; i++){
+for(const seatButton of seatsButtons){
 
-    const seatButton=seatsButtons[i];
+        seatButton.addEventListener('click',function(e){
 
-    seatButton.addEventListener('click',function(){
+            
+        //button and alert message
+
+        if (count >= 4) {
+            alert("You can only select up to 4 seats.");
+            return;
+        }
+
+        if (seatButton.classList.contains('bg-[#1DD100]')) {
+            return;
+        }
+
+// seatButton.classList.add('btn-disabled');
 
         //seat seatButton background color
-        seatButton.classList.add('bg-green-500')
+        seatButton.classList.add('bg-[#1DD100]')
 
-        //disablet button
+
+
 
 
 
@@ -32,6 +45,10 @@ for(let i = 0 ; i <= seatsButtons.length ; i++){
         const seatName=document.createElement('h3');
         seatName.innerText=btnText;
         div.appendChild(seatName);
+
+        const classElement=document.createElement('h3');
+        classElement.innerText='Economoy';
+        div.appendChild(classElement);
 
         const priceTitle=document.createElement('h3');
         priceTitle.innerText=price;
@@ -73,31 +90,42 @@ for(let i = 0 ; i <= seatsButtons.length ; i++){
                 kuponElement.children[0].classList.add('bg-green-200')
                 kuponElement.classList.remove('btn-disabled');
 
-                ///dispunt 
+                ///discount 
                 const kopuponBtn=document.getElementById('kopupon-btn');
                 kopuponBtn.addEventListener('click',function(){
-                    const kuponField=document.getElementById('kopupon-field').value;
-                    if(kuponField === 'NEW15'){
-                        discount=totalPrice * 15 /100;
+                    const kuponFields=document.getElementById('kopupon-field').value;
+                    const kuponField=kuponFields.split(' ').join('').toUpperCase();
 
-                        grandTotal.innerText=totalPrice - discount;
+                    const discountElement=document.getElementById('discount')
+                    if(kuponField === 'NEW15' || kuponField === 'COUPLE20'){
+                        if(kuponField === 'NEW15'){
+                            discount=totalPrice * 15 / 100;
+                            discountElement.innerText='Discount= '+ discount;
 
+                            grandTotal.innerText=totalPrice - discount;
+                        }else if(kuponField === 'COUPLE20'){
+                            discount=totalPrice * 20 / 100;
+                            discountElement.innerText='Discount= '+ discount;
 
+                            grandTotal.innerText=totalPrice - discount;
+
+                        }
+                    }else{
+                        alert('please valid kopupon')
                     }
-
-
-    
+                    kuponElement.classList.add('hidden');
 
                     
                 })
 
             }
 
-
-
     })
     
 }
+
+//next button enable and click function
+const phoneInput=document.getElementById('phone-input').value;
 
 
 
