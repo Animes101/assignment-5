@@ -125,7 +125,31 @@ for(const seatButton of seatsButtons){
 }
 
 //next button enable and click function
-const phoneInput=document.getElementById('phone-input').value;
+
+const numberField = document.getElementById('number-input');
+numberField.addEventListener('keyup', function (e) {
+    const number = e.target.value;
+    const nextBtn = document.getElementById('next-btn');
+    if (number !== '') {
+        nextBtn.classList.remove('btn-disabled');
+    }
+})
+
+const nextBtn = document.getElementById('next-btn');
+nextBtn.addEventListener('click', function () {
+
+    const congratulation = document.getElementById('success');
+    congratulation.classList.remove('hidden');
+
+});
+
+
+function Continue() {
+    const congratulation = document.getElementById('success');
+    congratulation.classList.add('hidden');
+    const numberField = document.getElementById('number-input')
+    numberField.value = '';
+}
 
 
 
