@@ -147,19 +147,19 @@
         </section>
 
         <!--========P.H Paribahan section========-->
-        <section id="paribahan" class="bg-[#F7F8F8] py-[100px]">
-            <div class="w-[90%] mx-auto">
-                <h1 class="text-6xl text-center font-bold raleway-font">A.H Paribahan</h1>
-                <p class="w-[50%] text-center mx-auto font-semibold">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
+        <section id="paribahan" class="bg-[#F7F8F8] py-[50px] md:py-[100px]">
+            <div class="w-full md:w-[90%] mx-auto">
+                <h1 class="text-3xl md:text-6xl text-center font-bold raleway-font">A.H Paribahan</h1>
+                <p class=" w-full md:w-[50%] text-base md:text-xl text-center mx-auto font-semibold">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
                 <div class="my-5">
                     <!--Ph card-->
-                    <div class="flex gap-2 rounded-lg justify-between bg-white h-[400px]">
+                    <div class="flex gap-2 my-[40px] rounded-lg justify-between bg-white h-[600px] lg:h-[400px]">
                         <div class="w-[70%] flex justify-center items-center">
                            <div>
                             <div class="flex justify-between">
-                                <div class="flex gap-2">
+                                <div class="flex flex-col md:flex-row p-2 gap-2">
                                     <div>
-                                        <img src="images/bus-logo.png" alt="busLogo">
+                                        <img class="" src="images/bus-logo.png" alt="busLogo">
                                     </div>
                                     <div>
                                         <h1 class="text-3xl">Greenline Paribahan</h1>
@@ -167,22 +167,22 @@
                                     </div>
                                 </div>
                                 <div>
-                                    <span class="btn hover:bg-[#1DD10026] bg-[#1DD10026]"><img src="images/seat-green-filled.png" alt=""><span id="total-seate">40</span> Seats left</span>
+                                    <span class="btn  hover:bg-[#1DD10026] bg-[#1DD10026]"><img src="images/seat-green-filled.png" alt=""><span id="total-seate" class="bg-green-600 p-2 text-white rounded-md">40</span> Seats left</span>
                                 </div>
                             </div>
 
                             <div class="bg-gray-800 p-4 rounded-lg space-y-5">
                                 <div class="flex justify-between">
-                                    <h3 class="text-2xl text-gray-400">Route</h3>
-                                    <h3 class="text-2xl text-gray-400">Dhaka - Sylhet</h3>
+                                    <h3 class="text-lg md:text-2xl text-gray-400">Route</h3>
+                                    <h3 class="text-lg md:text-2xl text-gray-400">Dhaka - Sylhet</h3>
                                 </div>
                                 <hr>
                                 <div class="flex justify-between">
-                                    <h3 class="text-2xl text-gray-400">Departure Time</h3>
-                                    <h3 class="text-2xl text-gray-400">9:00 PM</h3>
+                                    <h3 class="text-lg md:text-2xl text-gray-400">Departure Time</h3>
+                                    <h3 class="text-lg md:text-2xl text-gray-400">9:00 PM</h3>
                                 </div>
                                 <hr>
-                                <div class="flex gap-2 justify-between">
+                                <div class="flex flex-col lg:flex-row gap-2 justify-between">
                                     <button class="btn">Boarding Point - Laxmipur</button>
                                     <button class="btn">Dropping Point - Bogura</button>
                                     <button class="btn">Est. Time - 11 Hour</button>
@@ -190,22 +190,24 @@
                             </div>
                            </div>
                         </div>
-                        <div class="w-[10%]">
+                        <div class="hidden md:block w-[10%]">
                             <img class="h-full w-full" src="images/info-devider.png" alt="info-devider">
                         </div>
                         <div class="w-[20%] flex justify-center items-center ">
                             <div>
-                                <img src="images/fare.png" class="block mx-auto" alt="fare">
-                                <h1 class="text-4xl font-bold raleway-font text-center">550 Taka</h1>
-                                <p class="text-1xl font-bold text-center">Per Seat</p>
+                                <img src="images/fare.png" class="block w-[50px] mx-auto" alt="fare">
+                                <h1 class="text-xl md:text-4xl font-bold raleway-font text-center">550 Taka</h1>
+                                <p class="text-base md:text-1xl font-bold text-center">Per Seat</p>
                             </div>
                         </div>
                     </div>
 
+                    <!--seat area-->
+
                     <div class="flex gap-4">
-                        <div class="w-[60%] space-y-5">
+                        <div class="w-[40%] lg:w-[60%] space-y-5">
                             <h3 class="text-4xl font-bold">Select Your Seat</h3>
-                            <hr class="border-2 border-gray-600 border-dashed">
+                            <hr class="border border-gray-600 border-dashed">
                             <div class="flex justify-between">
                                 <div class="flex items-center gap-1">
                                     <img src="images/seat-gray.png" alt="sit-gray">
@@ -216,9 +218,9 @@
                                     <h3 class="text-2xl font-bold">Selected</h3>
                                 </div>
                             </div>
-                            <hr class="border-2 border-gray-600 border-dashed">
+                            <hr class="border border-gray-600 border-dashed">
                             <div class="flex justify-end">
-                                <button class="btn bg-gray-500 hover:bg-gray-500"><img src="images/string.png" alt="string"></button>
+                                <button class="btn bg-green-500 hover:bg-green-500"><img src="images/string.png" alt="string"></button>
                             </div>
                             <div class="grid grid-cols-5 gap-5">
                                 <!--sit A-->
@@ -292,7 +294,7 @@
                                  <button id="sit-button" class="btn bg-gray-300">J4</button>
                             </div>
                         </div>
-                        <div class="w-40% space-y-2">
+                        <div class="w-[60%] lg:w-[40%] space-y-2">
                             <h3 class="text-4xl font-bold">Select Your Seat</h3>
                             <hr class="border border-gray-950 border-dashed">
                             <div class="space-y-6 bg-gray-200 p-2 rounded-md ">
@@ -311,7 +313,7 @@
                                     <h3>BDT <span id="price">0</span></h3>
                                 </div>
                                 <h3 id="discount"></h3>
-                                <div id="cupon-input" class="join btn-disabled">
+                                <div id="cupon-input" class=" btn-disabled w-full">
                                     <input id="kopupon-field" class="input input-bordered join-item" placeholder="Have any copupon?"/>
                                     <button id="kopupon-btn" class="btn join-item bg-green-500 rounded-r-full">Apply</button>
                                 </div>
@@ -321,11 +323,11 @@
                                 </div>
                                 <div class="flex flex-col">
                                     <label class="text-xl text-black font-bold py-2" for="">Passenger Name*</label>
-                                    <input type="text" placeholder="Type here" class="input input-bordered input-info w-full max-w-xs" />
+                                    <input type="text" placeholder="Enter your name" class="input input-bordered input-info w-full" />
                                     <label class="text-xl text-black font-bold py-2" for="">Phone Number*</label>
-                                    <input id="number-input" type="text" placeholder="Enter your phone number" class="input input-bordered input-info w-full max-w-xs" />
+                                    <input id="number-input" type="text" placeholder="Enter your phone number" class="input input-bordered input-info w-full" />
                                     <label class="text-xl text-black font-bold py-2" for="">Email ID</label>
-                                    <input type="email" placeholder="Enter your email id" class="input input-bordered input-info w-full max-w-xs" />
+                                    <input type="email" placeholder="Enter your email id" class="input input-bordered input-info w-full" />
                                     <button id="next-btn" class="btn bg-green-500 text-xl mt-5 btn-disabled hover:text-green-600">Next</button>
                                 </div>
                                 <div class="flex justify-between">
