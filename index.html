@@ -42,7 +42,7 @@
                   <li><a>Search</a></li>
                 </ul>
               </div>
-              <a class="text-xl cursor-pointer">A-Ticket</a>
+              <a class="text-2xl font-bold  cursor-pointer">A-Ticket</a>
             </div>
             <div class="navbar-center hidden lg:flex">
               <ul class="menu menu-horizontal px-1">
@@ -204,8 +204,8 @@
 
                     <!--seat area-->
 
-                    <div class="flex gap-4">
-                        <div class="w-[40%] lg:w-[60%] space-y-5">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
+                        <div class=" space-y-5">
                             <h3 class="text-4xl font-bold">Select Your Seat</h3>
                             <hr class="border border-gray-600 border-dashed">
                             <div class="flex justify-between">
@@ -294,7 +294,7 @@
                                  <button id="sit-button" class="btn bg-gray-300">J4</button>
                             </div>
                         </div>
-                        <div class="w-[60%] lg:w-[40%] space-y-2">
+                        <div class=" space-y-2">
                             <h3 class="text-4xl font-bold">Select Your Seat</h3>
                             <hr class="border border-gray-950 border-dashed">
                             <div class="space-y-6 bg-gray-200 p-2 rounded-md ">
@@ -313,7 +313,7 @@
                                     <h3>BDT <span id="price">0</span></h3>
                                 </div>
                                 <h3 id="discount"></h3>
-                                <div id="cupon-input" class=" btn-disabled w-full">
+                                <div id="cupon-input" class="join btn-disabled w-full">
                                     <input id="kopupon-field" class="input input-bordered join-item" placeholder="Have any copupon?"/>
                                     <button id="kopupon-btn" class="btn join-item bg-green-500 rounded-r-full">Apply</button>
                                 </div>
@@ -381,8 +381,6 @@
                 </nav>
               </div> 
       </footer>
-    
-
 
     <!--link javascript file-->
     <script src="js/index.js"></script>

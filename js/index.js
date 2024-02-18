@@ -12,7 +12,7 @@ for(const seatButton of seatsButtons){
         //button and alert message
 
         if (count >= 4) {
-            alert("You can only select up to 4 seats.");
+            alert("You can buy only 4 tickets");
             return;
         }
 
@@ -20,15 +20,8 @@ for(const seatButton of seatsButtons){
             return;
         }
 
-// seatButton.classList.add('btn-disabled');
-
         //seat seatButton background color
         seatButton.classList.add('bg-[#1DD100]')
-
-
-
-
-
 
         //get site namne and price
         const btnText=this.innerText;
