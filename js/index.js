@@ -132,6 +132,9 @@ numberField.addEventListener('keyup', function (e) {
     const nextBtn = document.getElementById('next-btn');
     if (number !== '') {
         nextBtn.classList.remove('btn-disabled');
+    }else{
+        nextBtn.classList.add('btn-disabled');
+        numberField.value = ''
     }
 })
 
