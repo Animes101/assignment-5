@@ -9,7 +9,7 @@ for(const seatButton of seatsButtons){
         seatButton.addEventListener('click',function(e){
 
             
-        //button and alert message
+        //select 4  and alert message
 
         if (count >= 4) {
             alert("You can buy only 4 tickets");
@@ -104,7 +104,7 @@ for(const seatButton of seatsButtons){
 
                         }
                     }else{
-                        alert('please valid kopupon')
+                        alert('please enter valid Coupon Code');
                     }
                     kuponElement.classList.add('hidden');
 
@@ -117,7 +117,7 @@ for(const seatButton of seatsButtons){
     
 }
 
-//next button enable and click function
+//next button enable and success message
 
 const numberField = document.getElementById('number-input');
 numberField.addEventListener('keyup', function (e) {
